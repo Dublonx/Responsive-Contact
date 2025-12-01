@@ -1,0 +1,136 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100dvh;
+}
+
+:root {
+ --font-p: "Poppins", sans-serif;
+ --primary-c: hsl(270, 100%, 40%);
+ --secondary-c: hsl(270, 100%, 60%);
+ --accent-c: hsl(235, 0%, 90%);
+ --heading-f: 1.5em;
+ --subheading-f: 1em;
+ --text-f: 0.875em;
+}
+
+/* responsive contact */
+.container {
+ max-width: 900px;
+ height: auto;
+ margin: 0 auto;
+ background-color: var(--accent-c);
+ padding: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1.5em;
+}
+
+.contact-info {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ gap: 1em;
+ flex-wrap: wrap;
+}
+
+.info i {
+ color: var(--primary-c);
+ font-size: var(--heading-f);
+}
+
+.info h3 {
+ margin-top: 8px;
+ font-size: var(--subheading-f);
+ font-family: var(--font-p);
+ color: #222;
+}
+
+.info p {
+ color: #555;
+ font-weight: 300;
+}
+
+.contact-field {
+ display: flex;
+ flex-direction: column;
+}
+
+.contact-field h2 {
+ font-size: var(--heading-f);
+ font-weight: 700;
+ color: var(--primary-c);
+}
+
+.contact-field p {
+ margin-top: 4px;
+ font-weight: 300;
+ color: #555;
+}
+
+.contact-field > form {
+ margin-top: 8px;
+}
+
+form .form-input {
+ margin: 8px 0;
+}
+
+.form-input input[type="text"],
+.form-input input[type="email"] {
+ width: 100%;
+ height: 32px;
+ border: none;
+ outline: none;
+ padding: 0 16px;
+ border-radius: 4px;
+}
+
+.form-input textarea {
+ width: 100%;
+ height: 150px;
+ padding: 8px 16px;
+ border: none;
+ outline: none;
+ border-radius: 4px;
+}
+
+#btn {
+ margin-top: 16px;
+}
+
+.form-input button {
+ width: 100px;
+ height: 32px;
+ border: none;
+ outline: none;
+ border-radius: 4px;
+ background-color: var(--secondary-c);
+ color: #fff;
+ cursor: pointer;
+ transition: .5s ease;
+}
+
+.form-input button:hover {
+ background-color: var(--primary-c);
+}
+
+/* for small devices */
+@media screen and (max-width: 768px) {
+ .container {
+  flex-direction: column-reverse;
+  max-width: 350px;
+  padding: 16px;
+ }
+}
